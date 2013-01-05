@@ -8,3 +8,23 @@
 	margin-left: 60px;
 	height: 300px;
 }
+#michune{
+	background-image: url("../images/michune.png");
+	margin-left: 60px;
+	height: 300px;
+}
+#bruja{
+	background-image: url("../images/bruja.png");
+	margin-left: 60px;
+	height: 300px;
+}
+#viscocha{
+	background-image: url("../images/viscocha.png");
+	margin-left: 60px;
+	height: 300px;
+}
+#yagana{
+	background-image: url("../images/yagana.png");
+	margin-left: 60px;
+	height: 300px;
+}
