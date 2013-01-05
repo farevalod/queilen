@@ -1,0 +1,27 @@
+!!! 5
+%html(lang="en")
+  %head
+    %title Queilen Nativa
+    %script(type="text/javascript" src="//use.typekit.net/hyl7ure.js")
+    %script(type="text/javascript")
+      try{Typekit.load();}catch(e){}
+    %link{:rel => 'stylesheet', :href => 'bootstrap/css/bootstrap.css', :type => "text/css"}
+    %link{:rel => 'stylesheet', :href => 'css/styles.css', :type => "text/css"}
+  %body
+    .topbar
+      .fill
+        .container
+          =haml :header
+    .container#main-box
+      .row.spacer
+	    .span6#overa 
+	    .span6#michune 
+      .row.spacer
+	    .span6#viscocha 
+	    .span6#bruja 
+      .row.spacer
+	    .span6#yagana 
+	    .span6#murta 
+      %hr
+      .footer
+        %p &copy; Queilen Nativa 2013
