@@ -1,4 +1,6 @@
-#logo{padding-top: 30px; padding-bottom: 30px;}
+#logo{
+	padding-top: 30px; padding-bottom: 30px;
+}
 .navegacion{
 	background: #4A1E21;
 	border-top-left-radius: 18px;
@@ -28,16 +30,18 @@
 	padding-left: 30px;
 }
 .spacer{
-padding-top: 30px;
+	padding-top: 30px;
 }
 #papa-nativa{
 	background-image: url("../images/nativa.png");
 	margin-left: 60px;
-	height: 300px;}
+	height: 300px;
+}
 #papa-lover{
 	background-image: url("../images/lover.png");
 	margin-left: 60px;
-	height: 300px;}
+	height: 300px;
+}
 #comidas-tipicas{
 	background-image: url("../images/tipicas.png");
 	height: 300px;}
