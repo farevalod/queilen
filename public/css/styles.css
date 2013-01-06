@@ -26,22 +26,32 @@
 	font-family: "brevia",serif;
 	font-style: italic;
 	font-weight: 800;
-	color: #fff;
+	color: #feb;
 	line-height: 1.25;
-	padding-top: 30px;
-	padding-left: 30px;
 }
 .spacer{
 	padding-top: 30px;
+}
+.center-pad{
+	position:relative;
+	top: 100px;
+	left: 70px;
+}
+.text-pad{
+	position:relative;
+	top: 100px;
+	left: 30px;
 }
 #papa-nativa{
 	background-image: url("../images/papashome.jpg");
 	margin-left: 60px;
 	height: 232px;
-	width: 840px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 }
 #papa-lover{
 	background-image: url("../images/lover.png");
+    background-size: cover;
 	margin-left: 60px;
 	height: 300px;
 	border-top-left-radius: 18px;
@@ -49,6 +59,7 @@
 }
 #comidas-tipicas{
 	background-image: url("../images/tipicas.png");
+    background-size: cover;
 	height: 300px;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px; 
@@ -56,17 +67,20 @@
 #la-bruja{
 	background-image: url("../images/bruja.png");
 	height: 300px;
+    background-size: cover;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px; 
 }
 #huerto-casero{
 	background-image: url("../images/huerto.png");
+    background-size: cover;
 	margin-left: 60px;
-	height: 300px;
+	height: 270px;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px; 
 }
 #variedades{
 	background-image: url("../images/variedades.png");
-	height: 300px;}
+    background-size: cover;
+	height: 270px;}
 .footer{padding-left:30px;}
