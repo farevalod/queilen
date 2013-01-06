@@ -22,8 +22,10 @@
 	font-family: "brevia";
 }
 .texto-foto{
-	font-family: "myriad-pro-condensed";
-	font-size: 4em;
+	font-size: 3.2em;
+	font-family: "brevia",serif;
+	font-style: italic;
+	font-weight: 800;
 	color: #fff;
 	line-height: 1.25;
 	padding-top: 30px;
@@ -35,23 +37,35 @@
 #papa-nativa{
 	background-image: url("../images/papashome.jpg");
 	margin-left: 60px;
-	height: 300px;
+	height: 232px;
+	width: 840px;
 }
 #papa-lover{
 	background-image: url("../images/lover.png");
 	margin-left: 60px;
 	height: 300px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 }
 #comidas-tipicas{
 	background-image: url("../images/tipicas.png");
-	height: 300px;}
+	height: 300px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
+}
 #la-bruja{
 	background-image: url("../images/bruja.png");
-	height: 300px;}
+	height: 300px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
+}
 #huerto-casero{
 	background-image: url("../images/huerto.png");
 	margin-left: 60px;
-	height: 300px;}
+	height: 300px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
+}
 #variedades{
 	background-image: url("../images/variedades.png");
 	height: 300px;}
