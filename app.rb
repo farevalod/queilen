@@ -1,5 +1,9 @@
 require 'sinatra'
 require 'haml'
+require 'sinatra/activerecord'
+require './models.rb'
+
+set :database, 'sqlite3:///queilen.sqlite3'
 
 get '/' do
   haml :index
