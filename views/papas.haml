@@ -3,31 +3,40 @@
   %head
     %title Queilen Nativa
     %script(type="text/javascript" src="//use.typekit.net/hyl7ure.js")
+    %script(type="text/javascript" src="js/jquery.min.js")
+    %script(type="text/javascript" src="bootstrap/js/bootstrap.js")
     %script(type="text/javascript")
       try{Typekit.load();}catch(e){}
     %link{:rel => 'stylesheet', :href => 'bootstrap/css/bootstrap.css', :type => "text/css"}
     %link{:rel => 'stylesheet', :href => 'css/styles.css', :type => "text/css"}
+    %link{:rel => 'stylesheet', :href => 'css/papa.css', :type => "text/css"}
   %body
     .topbar
       .fill
         .container
           =haml :header
+    <!-- Button to trigger modal -->
+     
+    <!-- Modal -->
+    #overamodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
+      .modal-header
+        %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
+        %h3#overamodallabel Modal header
+      .modal-body
+        %p One fine body…
+      .modal-footer
+        %button.btn(onClick="window.print()" value="Imprimir")Imprimir
     .container#main-box
       .row.spacer
-        .span6#overa 
-          NATIVA OVERA
-        .span6#michune 
-          NATIVA MICHUÑE
+        %a(href="#overamodal" role="button" data-toggle="modal")
+          .span5.texto-papa#overa 
+        .span5.texto-papa#michune 
       .row.spacer
-        .span6#viscocha 
-          NATIVA VISCOCHA
-        .span6#bruja 
-          NATIVA BRUJA
+        .span5.texto-papa#viscocha 
+        .span5.texto-papa#bruja 
       .row.spacer
-        .span6#yagana 
-          NATIVA YAGANA
-        .span6#murta 
-          NATIVA MURTA
+        .span5.texto-papa#yagana 
+        .span5.texto-papa#murta 
       %hr
       .footer
         %p &copy; Queilen Nativa 2013

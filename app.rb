@@ -8,14 +8,17 @@ set :database, 'sqlite3:///queilen.sqlite3'
 get '/' do
   haml :index
 end
+get '/la-papa' do
+  haml :la_papa
+end
 get '/tipos-de-papa' do
-  haml :papas
+  haml :papas, :locals => {:overa => overa}
 end
 get '/cocina' do
   haml :cocina
 end
-get '/tu-huerta' do
-  haml :huerta
+get '/tu-huerto' do
+  haml :huerto
 end
 get '/sobre-nosotros' do
   haml :about

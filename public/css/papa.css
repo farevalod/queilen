@@ -1,30 +1,76 @@
+.texto-papa{
+	font-size: 3.2em;
+	font-family: "myriad-pro";
+	font-style: normal;
+	letter-spacing: 4px;
+	font-weight: 700;
+	color: #fff;
+
+	line-height: 1.25;
+}
+.papa-pad{
+	position:relative;
+	top: 140px;
+	background: rgba(74,29,33,0.65);
+	left: 50px;
+}
 #murta{
-	background-image: url("../images/nativa.png");
+	background-image: url("../images/tipomurta.jpg");
 	margin-left: 60px;
+    background-size: cover;
+	border-bottom-right-radius: 18px; 
+	border-bottom-left-radius: 18px; 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #overa{
-	background-image: url("../images/lover.png");
+	background-image: url("../images/tipoovera.jpg");
 	margin-left: 60px;
+    background-size: cover;
+	border-bottom-right-radius: 18px; 
+	border-bottom-left-radius: 18px; 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #michune{
-	background-image: url("../images/michune.png");
+	background-image: url("../images/tipomichunenegra.jpg");
 	margin-left: 60px;
+    background-size: cover;
+	border-bottom-right-radius: 18px; 
+	border-bottom-left-radius: 18px; 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #bruja{
-	background-image: url("../images/bruja.png");
+	background-image: url("../images/tipobruja.jpg");
 	margin-left: 60px;
+    background-size: cover;
+	border-bottom-right-radius: 18px; 
+	border-bottom-left-radius: 18px; 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #viscocha{
-	background-image: url("../images/viscocha.png");
+	background-image: url("../images/tipoviscocha.jpg");
 	margin-left: 60px;
+    background-size: cover;
+	border-bottom-right-radius: 18px; 
+	border-bottom-left-radius: 18px; 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #yagana{
-	background-image: url("../images/yagana.png");
+	background-image: url("../images/tipoyagana.jpg");
 	margin-left: 60px;
+    background-size: cover;
+	border-bottom-right-radius: 18px; 
+	border-bottom-left-radius: 18px; 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px; 
 	height: 300px;
 }
