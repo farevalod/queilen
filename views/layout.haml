@@ -1,0 +1,12 @@
+!!! 5
+%html(lang="en")
+  =haml :head
+  %body
+    .topbar
+      .fill
+        .container
+          =haml :header
+    .container#main-box
+      =yield
+      .row
+      =haml :footer

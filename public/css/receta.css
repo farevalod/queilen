@@ -1,0 +1,22 @@
+.chef{
+	color: #BE712A;
+	font-family: "museo";
+	font-style: italic;
+}
+.columna-receta{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.columna-title{
+	font-family: "museo";
+	font-size: 1.2em;
+}
+.secreto{
+	text-transform:uppercase;
+	float:right;
+	color: #BE712A;
+	padding-right: 5px;
+	font-family: "museo";
+	font-size: 1.1em;
+    border-right:solid #BE712A;
+}

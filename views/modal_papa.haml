@@ -1,0 +1,8 @@
+.modal.hide.fade{:id => id}(tabindex="-1" role="dialog" aria-hidden="true")
+  .modal-header
+    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
+    %h3=papa.name
+  .modal-body
+    %p=papa.description
+  .modal-footer
+    %button.btn(onClick="window.print()" value="Imprimir")Imprimir

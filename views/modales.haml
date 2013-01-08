@@ -1,50 +1,6 @@
-#overamodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
-  .modal-header
-    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3#overamodallabel Modal header
-  .modal-body
-    %p One fine body…
-  .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-#michunemodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
-  .modal-header
-    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3#michunemodallabel Modal header
-  .modal-body
-    %p One fine body…
-  .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-#brujamodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
-  .modal-header
-    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3#brujamodallabel Modal header
-  .modal-body
-    %p One fine body…
-  .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-#viscochamodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
-  .modal-header
-    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3#viscochamodallabel Modal header
-  .modal-body
-    %p One fine body…
-  .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-#yaganamodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
-  .modal-header
-    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3#yaganamodallabel Modal header
-  .modal-body
-    %p One fine body…
-  .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-
-#murtamodal.modal.hide.fade(tabindex="-1" role="dialog" aria-labelledby="overamodallabel" aria-hidden="true")
-  .modal-header
-    %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3#murtamodallabel Modal header
-  .modal-body
-    %p One fine body…
-  .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-
+=haml :modal_papa, :locals => {:papa =>@papas[0], :id => "overamodal"}
+=haml :modal_papa, :locals => {:papa =>@papas[0], :id => "michunemodal"}
+=haml :modal_papa, :locals => {:papa =>@papas[0], :id => "brujamodal"}
+=haml :modal_papa, :locals => {:papa =>@papas[0], :id => "viscochamodal"}
+=haml :modal_papa, :locals => {:papa =>@papas[0], :id => "yaganamodal"}
+=haml :modal_papa, :locals => {:papa =>@papas[0], :id => "murtamodal"}

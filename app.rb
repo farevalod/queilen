@@ -12,11 +12,18 @@ get '/la-papa' do
   haml :la_papa
 end
 get '/tipos-de-papa' do
-  haml :papas, :locals => {:overa => overa}
+  @papas = Papa.all()
+  haml :papas, :locals => {:papas => @papas}
 end
 get '/cocina' do
   haml :cocina
 end
+
+get '/recetas/:id' do
+	@receta = Receta.find(params[:id])
+	haml :receta, :locals => {:receta => @receta}
+end
+
 get '/tu-huerto' do
   haml :huerto
 end

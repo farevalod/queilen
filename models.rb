@@ -3,6 +3,7 @@ class Papa < ActiveRecord::Base
 end
 
 class Receta < ActiveRecord::Base
+  set_table_name "recetas"
   validates_presence_of :name, :category_id, :foto, :difficulty, :time, :servings, :ingredients, :instructions, :secret
   belongs_to :categoria
 end

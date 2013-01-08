@@ -1,0 +1,24 @@
+.spacer
+  .span2.menu-cocina
+    =haml :menu_cocina
+  .span8
+    #welcome-cocina
+    %h2.offset3=receta.name
+    .span2.offset1
+      ="Dificultad: "+receta.difficulty
+    .span2
+      =receta.time.to_s+" minutos"
+    .span2
+      =receta.servings.to_s+" Porciones"
+    .row
+    %hr
+    %span.chef Receta creada y preparada para <b>Queilén</b> por el <b>Chef Axel Manriquez</b>, de <b>Le Toques Blanches</b>
+    .row
+    .span4.columna-receta
+      .columna-title INGREDIENTES
+      =receta.ingredients
+    .span3.columna-receta
+      .columna-title PREPARACIÓN
+      =receta.instructions
+    .row
+    .secreto=receta.secret
