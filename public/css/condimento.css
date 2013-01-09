@@ -1,0 +1,20 @@
+#welcome-condimentos{
+	background-image: url("/images/condimentos/condimentoportada.jpg");
+	height: 205px;
+}
+.condimento-nombre{
+	color: #BF742E;
+}
+.condimento-intro{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 1.3em;
+}
+.condimento-description{
+	font-size: 1.3em;
+}
+.condimento{
+	margin-bottom: 30px;
+	background: #ddd;
+}
+

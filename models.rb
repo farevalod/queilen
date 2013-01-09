@@ -3,7 +3,7 @@ class Papa < ActiveRecord::Base
 end
 
 class Receta < ActiveRecord::Base
-  set_table_name "recetas"
+  self.table_name = "recetas"
   validates_presence_of :name, :category_id, :foto, :difficulty, :time, :servings, :ingredients, :instructions, :secret
   belongs_to :categoria
 end
@@ -21,7 +21,8 @@ class Corte < ActiveRecord::Base
 end
 
 class Categoria < ActiveRecord::Base
-  validates_presence_of :name
+  self.table_name = "categories"
+  validates_presence_of :nombre
   has_many :recetas
 end
 

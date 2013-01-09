@@ -1,0 +1,18 @@
+.corte-nombre{
+	color: #BF742E;
+}
+#welcome-cortes{
+}
+.corte-intro{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 1.3em;
+}
+.corte-description{
+	font-size: 1.3em;
+}
+.corte{
+	margin-bottom: 30px;
+	background: #ddd;
+}
+

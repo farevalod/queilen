@@ -8,31 +8,15 @@
           %span.menu-category Recetas
       #collapseOne.accordion-body.collapse.in
         .accordion-inner
-          %span.menu-option Salsas
-          %span.menu-option Aperitivos
-          %span.menu-option Ensaladas
-          %span.menu-option Guisos
-          %span.menu-option De fondo
-          %span.menu-option Postres
+          -categorias.each do |c|
+            %a{:href => "/recetas/categorias/#{c.id}"}
+              %span.menu-option=c.nombre
       .accordion-heading
-        %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo")
+        %a.accordion-toggle{:href => '/condimentos'}
           %span.menu-category Condimentos
       .accordion-heading
         %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="#collapseThree")
           %span.menu-category Utencilios
       .accordion-heading
-        %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="#collapseFour")
+        %a.accordion-toggle{:href => '/cortes'}
           %span.menu-category Tipos de corte
-      #collapseFour.accordion-body.collapse
-        .accordion-inner
-          %span.menu-option Pivote
-          %span.menu-option Caida Libre
-          %span.menu-option Chateu
-          %span.menu-option Olivette
-          %span.menu-option Brunoise
-          %span.menu-option Parmentier
-          %span.menu-option Paisano
-          %span.menu-option Cascos
-          %span.menu-option Concaseé
-          %span.menu-option Rondelle
-          %span.menu-option Bastón

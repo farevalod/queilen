@@ -16,12 +16,35 @@ get '/tipos-de-papa' do
   haml :papas, :locals => {:papas => @papas}
 end
 get '/cocina' do
+  @categorias = Categoria.all()
   haml :cocina
 end
 
+get '/recetas/categorias/:id' do
+  @categorias = Categoria.all()
+  @categoria = Categoria.find(params[:id])
+  @recetas = Receta.where("category_id = ?", params[:id])
+  haml :recetas
+end
 get '/recetas/:id' do
+    @categorias = Categoria.all()
 	@receta = Receta.find(params[:id])
-	haml :receta, :locals => {:receta => @receta}
+	haml :receta
+end
+get '/condimentos' do
+    @categorias = Categoria.all()
+	@condimentos = Condimento.all()
+	haml :condimentos
+end
+get '/condimentos/:id' do
+	@condimento = Condimento.find(params[:id])
+	haml :condimento
+end
+
+get '/cortes' do
+    @categorias = Categoria.all()
+	@cortes = Corte.all()
+	haml :cortes
 end
 
 get '/tu-huerto' do

@@ -1,0 +1,12 @@
+.spacer
+  .span2.menu-cocina
+    =haml :menu_cocina, :locals => {:categorias => @categorias }
+  .span9
+    .span9{:id => "welcome-#{@categoria.nombre}"}
+    %img{:src => "/images/categorias/#{@categoria.foto}"}
+    .categoria-description=@categoria.description
+    .span2
+      -@recetas.each do |r|
+        %a{:href => "/recetas/#{r.id}"}
+          %h5.receta-nombre=r.name
+          %img{:src => "/images/recetas/#{r.foto}"}

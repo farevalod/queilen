@@ -11,6 +11,17 @@
 	font-family: "museo";
 	font-size: 1.2em;
 }
+.receta-nombre{
+	font-size:1.4em;
+}
+.categoria-nombre{
+}
+.categoria-description{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 1.3em;
+}
+
 .secreto{
 	text-transform:uppercase;
 	float:right;

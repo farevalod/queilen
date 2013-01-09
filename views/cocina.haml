@@ -1,6 +1,6 @@
 .spacer
   .span2.menu-cocina
-    =haml :menu_cocina
+    =haml :menu_cocina, :locals => {:categorias => @categorias }
   .span9
     #welcome-cocina
     %h2 Elige la mejor alternativa para hacer de tú cocina algo más fácil

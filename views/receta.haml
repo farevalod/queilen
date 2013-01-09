@@ -1,7 +1,7 @@
 .spacer
   .span2.menu-cocina
-    =haml :menu_cocina
-  .span8
+    =haml :menu_cocina, :locals => {:categorias => @categorias }
+  .span9
     #welcome-cocina
     %h2.offset3=receta.name
     .span2.offset1
@@ -16,9 +16,9 @@
     .row
     .span4.columna-receta
       .columna-title INGREDIENTES
-      =receta.ingredients
+      =receta.ingredients.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
     .span3.columna-receta
       .columna-title PREPARACIÓN
-      =receta.instructions
+      =receta.instructions.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
     .row
-    .secreto=receta.secret
+    .secreto=receta.secret.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
