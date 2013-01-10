@@ -5,8 +5,10 @@
     .span9{:id => "welcome-#{@categoria.nombre}"}
     %img{:src => "/images/categorias/#{@categoria.foto}", :class => "rounded"}
     .categoria-description=@categoria.description
-    .span6
+    .span9
       -@recetas.each do |r|
-        %a{:href => "/recetas/#{r.id}"}
-          %img{:src => "/images/q.png"}
-          .burdeo.receta-nombre=r.name
+        .list-nombre
+          %a{:href => "/recetas/#{r.id}"}
+            %img{:src => "/images/q.png", :style => "float:left;"}
+            .burdeo.receta-nombre(style="float:left;")=r.name
+        .row
