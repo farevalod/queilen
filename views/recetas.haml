@@ -3,9 +3,9 @@
     =haml :menu_cocina, :locals => {:categorias => @categorias }
   .span9
     .span9{:id => "welcome-#{@categoria.nombre}"}
-    %img{:src => "/images/categorias/#{@categoria.foto}"}
+    %img{:src => "/images/categorias/#{@categoria.foto}", :class => "rounded"}
     .categoria-description=@categoria.description
-    .span2
+    .span6
       -@recetas.each do |r|
         %a{:href => "/recetas/#{r.id}"}
           %h5.receta-nombre=r.name

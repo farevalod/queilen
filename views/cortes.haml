@@ -4,12 +4,12 @@
   .span9#welcome-cortes
     %img{:src => "/images/cortes/cortesportada.jpg", :class => "rounded"}
   .span9.corte-intro En las distintas variedades de preparar un plato, existen diferentes técnicas de corte de los ingredientes, aplicadas la mayoría con un cuchillo. Ya sea por atractiva o que convenga mejor en la preparación del plato, aquí los cortes de papa más comunes.
-  .span9
+  .span9.offset2
     -@cortes.each do |c|
       .corte
-        %h2=c.name
         .span2
-          %img{:src => "/images/cortes/#{c.foto}"}
+          %img{:src => "/images/cortes/#{c.foto}", :class => "rounded"}
         .span6
+          %h3.burdeo=c.name
           %span.corte-description=c.description
       .row

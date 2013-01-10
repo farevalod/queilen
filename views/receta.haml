@@ -2,13 +2,13 @@
   .span2.menu-cocina
     =haml :menu_cocina, :locals => {:categorias => @categorias }
   .span9
-    %img{:src => "/images/recetas/#{@receta.foto}"}
+    %img{:src => "/images/recetas/#{@receta.foto}", :class => "rounded"}
     .span2.offset1
-      ="Dificultad: "+@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
+      %h5="Dificultad: "+@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
     .span2
-      =@receta.time.to_s+" minutos"
+      %h5=@receta.time.to_s+" minutos"
     .span2
-      =@receta.servings.to_s+" Porciones"
+      %h5=@receta.servings.to_s+" Porciones"
     .row
     %hr
     %span.chef Receta creada y preparada para <b>Queilén</b> por el <b>Chef Axel Manriquez</b>, de <b>Le Toques Blanches</b>

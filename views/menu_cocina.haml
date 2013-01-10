@@ -1,19 +1,17 @@
-.menu-cocina
-  %h2 COCINA
-  
-  .accordion#accordion2 
-    .accordion-group(style="border:0;")
-      .accordion-heading(style="padding:0 !important;")
-        %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="#collapseOne")
-          %span.menu-category Recetas
-      #collapseOne.accordion-body.collapse
-        .accordion-inner
-          -categorias.each do |c|
-            %a{:href => "/recetas/categorias/#{c.id}"}
-              %span.menu-option=c.nombre+"<br>"
-      .accordion-heading(style="padding:0 !important;")
-        %a.accordion-toggle{:href => '/condimentos'}(style="padding: 8px 10px !important;")
-          %span.menu-category Condimentos
-      .accordion-heading(style="padding:0 !important;")
-        %a.accordion-toggle{:href => '/cortes'}(style="padding: 8px 10px !important;")
-          %span.menu-category Tipos de corte
+%h2 COCINA
+.accordion#accordion2 
+  .accordion-group(style="border:0;")
+    .accordion-heading(style="padding:0 !important;")
+      %a.accordion-toggle(data-parent="#accordion2" href="/cocina" style="padding: 2px 2px !important;")
+        %span.menu-category(style="padding:0 !important;") Recetas
+    #collapseOne
+      .accordion-inner(style="border:0;")
+        -categorias.each do |c|
+          %a{:href => "/recetas/categorias/#{c.id}"}
+            %span.menu-option(style="padding:0 !important;")=c.nombre+"<br>"
+    .accordion-heading(style="padding:0 !important;")
+      %a.accordion-toggle{:href => '/condimentos'}(style="padding: 2px 2px !important;")
+        %span.menu-category Condimentos
+    .accordion-heading
+      %a.accordion-toggle{:href => '/cortes'}(style="padding: 2px 2px !important;")
+        %span.menu-category(style="padding:0 !important;") Tipos de corte
