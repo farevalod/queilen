@@ -15,9 +15,9 @@
     .row
     .span4.columna-receta
       .columna-title INGREDIENTES
-      =@receta.ingredients.gsub('/\n/m',"<br>")
+      =@receta.ingredients
     .span3.columna-receta
       .columna-title PREPARACIÓN
-      =@receta.instructions.gsub('/\n/m',"<br>")
+      =@receta.instructions
     .row
     .secreto=@receta.secret

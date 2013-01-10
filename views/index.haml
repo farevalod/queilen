@@ -1,5 +1,6 @@
 %script(type="text/javascript")
   $(document).ready(function() {$('.carousel').carousel({interval: 3600})});
+=haml :modales
 .row.spacer
   .span11.texto-foto#slider
     #Carousel.carousel.slide
@@ -27,7 +28,7 @@
     %a{:href => "/cocina"}
       %img{ :src => "/images/home/platopapas.jpg", :class => "rounded", :id => "comidas-tipicas" }
   .span3
-    %a{:href => "/tipos-de-papa"}
+    %a(href="#brujamodal" role="button" data-toggle="modal")
       %img{ :src => "/images/home/labruja.jpg", :class => "rounded", :id => "la-bruja" }
 .row.spacer
   .span8

@@ -9,6 +9,6 @@
       -@recetas.each do |r|
         .list-nombre
           %a{:href => "/recetas/#{r.id}"}
-            %img{:src => "/images/q.png", :style => "float:left;"}
+            %img{:src => "/images/q.png", :style => "float:left;padding-right:15px;"}
             .burdeo.receta-nombre(style="float:left;")=r.name
         .row

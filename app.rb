@@ -6,6 +6,7 @@ require './models.rb'
 set :database, 'sqlite3:///queilen.sqlite3'
 
 get '/' do
+  @papas = Papa.all()
   haml :index
 end
 get '/la-papa' do
@@ -13,7 +14,7 @@ get '/la-papa' do
 end
 get '/tipos-de-papa' do
   @papas = Papa.all()
-  haml :papas, :locals => {:papas => @papas}
+  haml :papas
 end
 get '/cocina' do
   @categorias = Categoria.all()
