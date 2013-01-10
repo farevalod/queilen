@@ -3,7 +3,6 @@
     =haml :menu_cocina, :locals => {:categorias => @categorias }
   .span9
     %img{:src => "/images/recetas/#{@receta.foto}"}
-    %h2.offset2=@receta.name
     .span2.offset1
       ="Dificultad: "+@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
     .span2
