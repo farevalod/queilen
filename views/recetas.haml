@@ -8,4 +8,5 @@
     .span6
       -@recetas.each do |r|
         %a{:href => "/recetas/#{r.id}"}
-          %h5.receta-nombre=r.name
+          %img{:src => "/images/q.png"}
+          .burdeo.receta-nombre=r.name
