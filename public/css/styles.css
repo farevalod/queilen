@@ -19,6 +19,9 @@
 .white{
 	color: #fff;
 }
+.pad{
+	padding-top:30px;
+}
 .rig{
 	float:right;
 }
