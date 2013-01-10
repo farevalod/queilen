@@ -2,21 +2,18 @@
   %h2 COCINA
   
   .accordion#accordion2 
-    .accordion-group
-      .accordion-heading
+    .accordion-group(style="border:0;")
+      .accordion-heading(style="padding:0 !important;")
         %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="#collapseOne")
           %span.menu-category Recetas
-      #collapseOne.accordion-body.collapse.in
+      #collapseOne.accordion-body.collapse
         .accordion-inner
           -categorias.each do |c|
             %a{:href => "/recetas/categorias/#{c.id}"}
-              %span.menu-option=c.nombre
-      .accordion-heading
-        %a.accordion-toggle{:href => '/condimentos'}
+              %span.menu-option=c.nombre+"<br>"
+      .accordion-heading(style="padding:0 !important;")
+        %a.accordion-toggle{:href => '/condimentos'}(style="padding: 8px 10px !important;")
           %span.menu-category Condimentos
-      .accordion-heading
-        %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="#collapseThree")
-          %span.menu-category Utencilios
-      .accordion-heading
-        %a.accordion-toggle{:href => '/cortes'}
+      .accordion-heading(style="padding:0 !important;")
+        %a.accordion-toggle{:href => '/cortes'}(style="padding: 8px 10px !important;")
           %span.menu-category Tipos de corte

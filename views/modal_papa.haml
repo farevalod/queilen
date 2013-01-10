@@ -1,8 +1,15 @@
-.modal.hide.fade{:id => id}(tabindex="-1" role="dialog" aria-hidden="true")
+.modal-bg.modal.hide.fade{:id => id}(tabindex="-1" role="dialog" aria-hidden="true")
   .modal-header
     %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
     %h3=papa.name
   .modal-body
+    %img{:src => "/images/tipos/#{papa.foto}"}
     %p=papa.description
+    %p=papa.cook_time
+    %p=papa.taste
+    %p=papa.cook_mode
+    %p=papa.good_for
   .modal-footer
     %button.btn(onClick="window.print()" value="Imprimir")Imprimir
+
+  validates_presence_of :name, :description, :cook_time, :taste, :cook_mode, :good_for

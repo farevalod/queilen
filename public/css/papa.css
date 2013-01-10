@@ -14,6 +14,9 @@
 	background: rgba(74,29,33,0.65);
 	left: 50px;
 }
+.modal-bg{
+	background: rgba(243,238,234,1);
+}
 #murta{
 	background-image: url("../images/tipomurta.jpg");
 	margin-left: 60px;

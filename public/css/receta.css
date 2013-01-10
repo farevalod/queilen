@@ -6,10 +6,16 @@
 .columna-receta{
 	padding-top: 30px;
 	padding-bottom: 30px;
+	color: #631E20;
 }
 .columna-title{
 	font-family: "museo";
+	color: #631E20;
 	font-size: 1.2em;
+}
+.columns-text{
+	color: #631E20;
+	font-family: "museo";
 }
 .receta-nombre{
 	font-size:1.4em;

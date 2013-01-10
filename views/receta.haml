@@ -2,23 +2,23 @@
   .span2.menu-cocina
     =haml :menu_cocina, :locals => {:categorias => @categorias }
   .span9
-    #welcome-cocina
-    %h2.offset3=receta.name
+    %img{:src => "/images/recetas/#{@receta.foto}"}
+    %h2.offset2=@receta.name
     .span2.offset1
-      ="Dificultad: "+receta.difficulty
+      ="Dificultad: "+@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
     .span2
-      =receta.time.to_s+" minutos"
+      =@receta.time.to_s+" minutos"
     .span2
-      =receta.servings.to_s+" Porciones"
+      =@receta.servings.to_s+" Porciones"
     .row
     %hr
     %span.chef Receta creada y preparada para <b>Queilén</b> por el <b>Chef Axel Manriquez</b>, de <b>Le Toques Blanches</b>
     .row
     .span4.columna-receta
       .columna-title INGREDIENTES
-      =receta.ingredients.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
+      =@receta.ingredients.gsub('/\n/m',"<br>")
     .span3.columna-receta
       .columna-title PREPARACIÓN
-      =receta.instructions.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
+      =@receta.instructions.gsub('/\n/m',"<br>")
     .row
-    .secreto=receta.secret.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
+    .secreto=@receta.secret

@@ -1,14 +1,33 @@
 .row.spacer
-  .span11.texto-foto#papa-nativa
-    %span.center-pad Descubre la papa nativa chilota
+  .span11.texto-foto#slider
+    #Carousel.carousel.slide
+      <!-- Carousel items -->
+      .carousel-inner
+        .item.active
+          %a{:href => "/tipos-de-papa"}
+            %img{ :src => "/images/slider/papaslider.jpg", :class => "rounded"}
+        .item
+          %a{:href => "/cocina"}
+            %img{ :src => "/images/slider/chilotaslider.jpg", :class => "rounded"}
+        .item
+          %a{:href => "/cortes"}
+            %img{ :src => "/images/slider/cortesslider.jpg", :class => "rounded"}
+        .item
+          %a{:href => "/huerto"}
+            %img{ :src => "/images/slider/huertoslider.jpg", :class => "rounded"}
+      <!-- Carousel nav -->
+      %a.carousel-control.left(href="#Carousel" data-slide="prev" style="height:15px;width:15px")
+      %a.carousel-control.right(href="#Carousel" data-slide="next" style="height:15px;width:15px")
+.row
+  .span3
+    %img{ :src => "/images/home/papalover.jpg", :class => "rounded", :id => "papa-lover"}
+  .span4
+    %a{:href => "/cocina"}
+      %img{ :src => "/images/home/platopapas.jpg", :class => "rounded", :id => "comidas-tipicas" }
+  .span3
+    %a{:href => "/tipos-de-papa"}
+      %img{ :src => "/images/home/labruja.jpg", :class => "rounded", :id => "la-bruja" }
 .row.spacer
-  .span3.texto-foto#papa-lover
-    %span.text-pad Papa lover?
-  .span4.texto-foto#comidas-tipicas
-    %span.text-pad Comidas tipicas
-  .span4.texto-foto#la-bruja
-    %span.text-pad Te has comido la bruja?
-.row.spacer
-  .span8.texto-foto#huerto-casero
-    %span.center-pad Huerto casero criollo
-  .span3.texto-foto#variedades
+  .span8
+    %img{ :src => "/images/home/huertohome.jpg", :class => "rounded", :id => "huerto-casero" }
+  .span3#variedades

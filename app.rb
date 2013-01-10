@@ -27,6 +27,7 @@ get '/recetas/categorias/:id' do
   haml :recetas
 end
 get '/recetas/:id' do
+	@ic = Iconv.new('UTF-8', 'UTF-8')
     @categorias = Categoria.all()
 	@receta = Receta.find(params[:id])
 	haml :receta
