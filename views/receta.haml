@@ -1,23 +1,30 @@
-.spacer
-  .span2.menu-cocina
-    =haml :menu_cocina, :locals => {:categorias => @categorias }
-  .span9
-    %img{:src => "/images/recetas/#{@receta.foto}", :class => "rounded"}
-    .span2.offset1
-      %h5="Dificultad: "+@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
-    .span2
-      %h5=@receta.time.to_s+" minutos"
-    .span2
-      %h5=@receta.servings.to_s+" Porciones"
-    .row
-    %hr
+.span2
+  .menu-cocina=haml :menu_cocina, :locals => {:categorias => @categorias }
+  %a{:href => "http://www.jumbo.cl"}
+    %img{:src => "/images/recetas/jumbologo.jpg", :class => "logo"}
+  %a{:href => "http://www.gourmet.cl"}
+    %img{:src => "/images/recetas/gourmetlogo.jpg", :class => "logo"}
+  %a{:href => "http://www.ltb.cl"}
+    %img{:src => "/images/recetas/letoqueslogo.jpg", :class => "logo"}
+.span9.spacer
+  %img{:src => "/images/recetas/#{@receta.foto}", :class => "foto-receta"}
+  .span2.offset1
+    %img{:src => "/images/recetas/gorrochef.png", :class => "i-receta"}
+    %span.d-receta=@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
+  .span2
+    %img{:src => "/images/recetas/reloj.png", :class => "i-receta"}
+    %span.d-receta=@receta.time.to_s+" min."
+  .span2
+    %img{:src => "/images/recetas/cubiertos.png", :class => "i-receta"}
+    %span.d-receta=@receta.servings.to_s+" Porciones"
+.span9
+  .chef-div
     %span.chef Receta creada y preparada para <b>Queilén</b> por el <b>Chef Axel Manriquez</b>, de <b>Le Toques Blanches</b>
-    .row
-    .span4.columna-receta
-      .columna-title INGREDIENTES
-      =@receta.ingredients
-    .span3.columna-receta
-      .columna-title PREPARACIÓN
-      =@receta.instructions
-    .row
-    .secreto=@receta.secret
+  .span8.ruler
+  .span4.columna-receta
+    .columna-title INGREDIENTES
+    =@receta.ingredients
+  .span3.columna-receta
+    .columna-title PREPARACIÓN
+    =@receta.instructions
+  .secreto=@receta.secret

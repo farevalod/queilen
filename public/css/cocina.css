@@ -1,20 +1,13 @@
 #welcome-cocina{
 	background-image: url("/images/cocinaportada.jpg");
-	height: 232px;
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
+	height: 216px;
 }
 .menu-cocina{
 	color: #BF742E;
 	padding: 5px;
 	background: #FBFAF9;
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-
+}
+.foto-receta{
 }
 .menu-title{
 	color: #4A1E21;

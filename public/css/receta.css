@@ -1,12 +1,34 @@
 .chef{
 	color: #BE712A;
+	margin-top: 15px;
 	font-family: "museo";
 	font-style: italic;
+}
+.chef-div{
+	padding-top:30px;
+}
+.ruler{
+	height: 2px;
+	margin-top:30px;
+	background-color:#742933; 
+}
+.lining{ 
+	padding-left: 10px;
 }
 .columna-receta{
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #631E20;
+}
+.i-receta{
+	padding-top: 30px;
+}
+.d-receta{
+	position: relative;
+	top: 15px;
+	left: 10px;
+	color: #742933;
+	font-weight: bold;
 }
 .columna-title{
 	font-family: "museo";
@@ -30,6 +52,7 @@
 }
 .categoria-description{
 	padding-top: 30px;
+	color: #4A1E21;
 	padding-bottom: 30px;
 	font-size: 1.3em;
 }
@@ -38,8 +61,16 @@
 	text-transform:uppercase;
 	float:right;
 	color: #BE712A;
-	padding-right: 5px;
+	margin-right: 25px;
+	padding-right: 10px;
 	font-family: "museo";
 	font-size: 1.2em;
     border-right:solid #BE712A;
+}
+.marcas{
+	height: 500px;
+}
+.logo{
+	margin-top: 30px;
+	margin-bottom: 15;
 }

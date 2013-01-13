@@ -1,5 +1,20 @@
+#logo:hover{
+	text-decoration:none;
+}
 #logo{
 	padding-top: 30px; padding-bottom: 30px;
+}
+.casita{
+	margin-left: 15px;
+}
+.casita:hover{
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+.hov:hover{
+	text-decoration: none;
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 .navegacion{
 	background: #4A1E21;
@@ -52,58 +67,50 @@
 }
 #slider{
 	margin-left: 60px;
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
 }
 .rounded{
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
 }
 #papa-lover{
     background-size: cover;
 	margin-left: 60px;
-	height: 300px;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
+	height: 320px;
+}
+#papa-lover:hover
+{
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 #comidas-tipicas{
     background-size: cover;
-	height: 300px;
-	margin-left: 70px;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
+	height: 320px;
+}
+#comidas-tipicas:hover
+{
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 #la-bruja{
-	height: 300px;
-	margin-left: 88px;
+	height: 320px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
+}
+#la-bruja:hover
+{
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 #huerto-casero{
     background-size: cover;
 	margin-left: 60px;
-	height: 270px;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
+	height: 320px;
+}
+#huerto-casero:hover
+{
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 #variedades{
-	background-image: url("../images/variedades.png");
+	background-image: url("../images/home/variedades.png");
     background-size: cover;
-	height: 270px;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
+	height: 320px;
 }
 .footer{padding:30px;margin-top:10px;color:#4A1E21 !important;}

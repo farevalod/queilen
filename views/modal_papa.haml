@@ -3,7 +3,7 @@
     %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
     %h3=papa.name
   .modal-body
-    %img{:src => "/images/tipos/#{papa.foto}"}
+    %img{:src => "/images/modal/#{papa.foto}"}
     %p=papa.description
     %p=papa.cook_time
     %p=papa.taste
@@ -11,5 +11,3 @@
     %p=papa.good_for
   .modal-footer
     %button.btn(onClick="window.print()" value="Imprimir")Imprimir
-
-  validates_presence_of :name, :description, :cook_time, :taste, :cook_mode, :good_for

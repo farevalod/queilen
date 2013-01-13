@@ -1,0 +1,7 @@
+.menu-papa
+  .papa-menu-title 
+    LA PAPA
+    <br>
+  -categorias.each do |c|
+    %a{:href => "/la-papa/#{c.id}", :class => "hov"}
+      %span.papa-option=c.nombre+"<br>"

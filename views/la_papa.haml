@@ -1,0 +1,6 @@
+.spacer
+  .span2.menu-papa
+    =haml :menu_papa, :locals => {:categorias => @categorias }
+  .span9
+    %img{:src => "/images/papa/#{@categoria.foto}"}
+    .papa-text=@categoria.texto

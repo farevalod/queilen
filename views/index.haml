@@ -8,29 +8,28 @@
       .carousel-inner
         .item.active
           %a{:href => "/tipos-de-papa"}
-            %img{ :src => "/images/slider/papaslider.jpg", :class => "rounded"}
+            %img{ :src => "/images/slider/nativashome.jpg"}
         .item
           %a{:href => "/cocina"}
-            %img{ :src => "/images/slider/chilotaslider.jpg", :class => "rounded"}
+            %img{ :src => "/images/slider/fomentafoto.jpg"}
         .item
           %a{:href => "/cortes"}
-            %img{ :src => "/images/slider/cortesslider.jpg", :class => "rounded"}
+            %img{ :src => "/images/slider/corteshome.jpg"}
         .item
           %a{:href => "/huerto"}
-            %img{ :src => "/images/slider/huertoslider.jpg", :class => "rounded"}
+            %img{ :src => "/images/slider/homehuerto.jpg"}
+        .item
+          %a{:href => "/recetas/10"}
+            %img{ :src => "/images/slider/recetadelasemana.jpg"}
       <!-- Carousel nav -->
       %a.carousel-control.left(href="#Carousel" data-slide="prev" style="height:15px;width:15px")
       %a.carousel-control.right(href="#Carousel" data-slide="next" style="height:15px;width:15px")
 .row
-  .span3
-    %img{ :src => "/images/home/papalover.jpg", :class => "rounded", :id => "papa-lover"}
-  .span4
-    %a{:href => "/cocina"}
-      %img{ :src => "/images/home/platopapas.jpg", :class => "rounded", :id => "comidas-tipicas" }
-  .span3
-    %a(href="#brujamodal" role="button" data-toggle="modal")
-      %img{ :src => "/images/home/labruja.jpg", :class => "rounded", :id => "la-bruja" }
+  %img{ :src => "/images/home/papalover3.jpg", :id => "papa-lover", :class => "span3"}
+  %a{:href => "/cocina"}
+    %img{ :src => "/images/home/comidatipicahome.jpg", :id => "comidas-tipicas", :class => "span5" }
+  %a(href="#brujamodal" role="button" data-toggle="modal")
+    %img{ :src => "/images/home/brujapapa.jpg", :id => "la-bruja", :class => "span3" }
 .row.spacer
-  .span8
-    %img{ :src => "/images/home/huertohome.jpg", :class => "rounded", :id => "huerto-casero" }
+  %img{ :src => "/images/home/huertohome.jpg", :id => "huerto-casero", :class => "span8" }
   .span3#variedades

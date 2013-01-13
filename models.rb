@@ -20,6 +20,11 @@ class Corte < ActiveRecord::Base
   validates_presence_of :name, :foto, :description
 end
 
+class Categoriaspapa < ActiveRecord::Base
+  validates_presence_of :nombre, :foto, :texto
+  self.table_name = "categorias_papa"
+end
+
 class Categoria < ActiveRecord::Base
   self.table_name = "categories"
   validates_presence_of :nombre

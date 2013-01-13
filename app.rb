@@ -3,13 +3,17 @@ require 'haml'
 require 'sinatra/activerecord'
 require './models.rb'
 
+set :bind, 'queilennativa.cl'
 set :database, 'sqlite3:///queilen.sqlite3'
+set :default_icon, "favicon.ico"
 
 get '/' do
   @papas = Papa.all()
   haml :index
 end
-get '/la-papa' do
+get '/la-papa/:id' do
+  @categorias = Categoriaspapa.all()
+  @categoria = Categoriaspapa.find(params[:id])
   haml :la_papa
 end
 get '/tipos-de-papa' do
@@ -28,14 +32,13 @@ get '/recetas/categorias/:id' do
   haml :recetas
 end
 get '/recetas/:id' do
-	@ic = Iconv.new('UTF-8', 'UTF-8')
     @categorias = Categoria.all()
 	@receta = Receta.find(params[:id])
 	haml :receta
 end
 get '/condimentos' do
     @categorias = Categoria.all()
-	@condimentos = Condimento.all()
+	@condimentos = Condimento.order(:name).all()
 	haml :condimentos
 end
 get '/condimentos/:id' do

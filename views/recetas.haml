@@ -3,7 +3,7 @@
     =haml :menu_cocina, :locals => {:categorias => @categorias }
   .span9
     .span9{:id => "welcome-#{@categoria.nombre}"}
-    %img{:src => "/images/categorias/#{@categoria.foto}", :class => "rounded"}
+    %img{:src => "/images/categorias/#{@categoria.foto}"}
     .categoria-description=@categoria.description
     .span9
       -@recetas.each do |r|

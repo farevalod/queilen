@@ -1,14 +1,41 @@
-.texto-papa{
+.menu-papa{
+	color: #BF742E;
+	background: #FBFAF9;
+	padding-bottom:10px;
+}
+
+.texto-papas{
 	font-size: 3.2em;
 	font-family: "myriad-pro";
 	font-style: normal;
 	letter-spacing: 4px;
 	font-weight: 700;
 	color: #fff;
-
 	line-height: 1.25;
 }
-.papa-pad{
+.papa-option{
+	color: rgba(184,151,92,1);
+	font-weight: bold;
+	font-size:1.3em;
+	margin-bottom: 15px;
+	line-height: 1.6;
+	padding-left:16px;
+
+}
+.papa-text{
+	margin-top: 30px;
+	font-size: 1.1em;
+}
+.papa-menu-title{
+	color: #4A1E21;
+	font-weight: bold;
+	font-size:1.8em;
+	padding-left:16px;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.papas-pad{
 	position:relative;
 	top: 140px;
 	background: rgba(74,29,33,0.65);
@@ -18,62 +45,38 @@
 	background: rgba(243,238,234,1);
 }
 #murta{
-	background-image: url("../images/tipomurta.jpg");
+	background-image: url("../images/papas/tipomurta.jpg");
 	margin-left: 60px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #overa{
-	background-image: url("../images/tipoovera.jpg");
+	background-image: url("../images/papas/tipoovera.jpg");
 	margin-left: 60px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #michune{
-	background-image: url("../images/tipomichunenegra.jpg");
+	background-image: url("../images/papas/tipomichunenegra.jpg");
 	margin-left: 60px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #bruja{
-	background-image: url("../images/tipobruja.jpg");
+	background-image: url("../images/papas/tipobruja.jpg");
 	margin-left: 60px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #viscocha{
-	background-image: url("../images/tipoviscocha.jpg");
+	background-image: url("../images/papas/tipoviscocha.jpg");
 	margin-left: 60px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
 	height: 300px;
 }
 #yagana{
-	background-image: url("../images/tipoyagana.jpg");
+	background-image: url("../images/papas/tipoyagana.jpg");
 	margin-left: 60px;
     background-size: cover;
-	border-bottom-right-radius: 18px; 
-	border-bottom-left-radius: 18px; 
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px; 
 	height: 300px;
 }
