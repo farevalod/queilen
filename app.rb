@@ -34,6 +34,7 @@ end
 get '/recetas/:id' do
     @categorias = Categoria.all()
 	@receta = Receta.find(params[:id])
+    @categoria = Categoria.find(@receta.category_id)
 	haml :receta
 end
 get '/condimentos' do
@@ -52,7 +53,7 @@ get '/cortes' do
 	haml :cortes
 end
 
-get '/tu-huerto' do
+get '/huerto' do
   haml :huerto
 end
 get '/sobre-nosotros' do

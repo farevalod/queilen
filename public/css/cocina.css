@@ -1,10 +1,11 @@
 #welcome-cocina{
 	background-image: url("/images/cocinaportada.jpg");
-	height: 216px;
+	height: 217px;
+	width: 671px;
 }
 .menu-cocina{
 	color: #BF742E;
-	padding: 5px;
+	padding: 10px;
 	background: #FBFAF9;
 }
 .foto-receta{
@@ -13,7 +14,6 @@
 	color: #4A1E21;
 	font-weight: bold;
 	font-size:2em;
-	padding-left:16px;
 	padding-top:30px;
 	padding-bottom:30px;
 }

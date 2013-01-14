@@ -67,6 +67,11 @@
 	font-size: 1.2em;
     border-right:solid #BE712A;
 }
+.rig-pad{
+	float:right;
+	padding-right:30px;
+	color: #4A1E21;
+}
 .marcas{
 	height: 500px;
 }

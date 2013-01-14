@@ -1,0 +1,35 @@
+.foto-huerto{
+	margin-top: 30px;
+}
+.body-huerto{
+	margin-top: 30px;
+	background: #fff;
+	height: 422px;
+}
+.huerto-title{
+	font-size: 2em;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align:center;
+	font-weight: 900;
+}
+.huerto-text{
+	font-size:1.2em;
+	margin:15px;
+}
+.foto-header-huerta{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.huerta-text{
+	font-size:1.3em;
+	margin-top: 30px;
+	margin-left: 15px;
+	font-family: "museo";
+	font-weight: 300;
+	line-height:1.4;
+}
+.tabla{
+	margin-left: 35px;
+	margin-bottom:30px;
+}

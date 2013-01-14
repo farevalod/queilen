@@ -1,0 +1,26 @@
+.span4.foto-contacto
+  %img{:src => "/images/contacto/fotocontacto.jpg"}
+.offset1.span7.texto-contacto
+  Si deseas más información, tienes alguna pregunta, te gustaría tener más recetas, o nuevos tips sobre la papa nativa, por favor, ¡contáctate con nosotros! Estaremos encantados de ayudarte.
+%form.form-horizontal.span7
+  .control-group
+    %label.control-label(for="inputName")
+      Nombre
+    .controls
+      %input(id="inputName" type="text" placeholder="Nombre")
+  .control-group
+    %label.control-label(for="inputEmail")
+      Email
+    .controls
+      %input(id="inputEmail" type="text" placeholder="Email")
+  .control-group
+    %label.control-label(for="inputSubject")
+      Asunto
+    .controls
+      %input(id="inputSubject" type="text" placeholder="Asunto")
+  .control-group
+    %label.control-label(for="inputText")
+      Mensaje
+    .controls
+      %textarea(rows=4 id="inputText" type="text" placeholder="Mensaje")
+  %button.offset2.btn{:type => "submit"}Enviar

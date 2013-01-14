@@ -113,4 +113,25 @@
     background-size: cover;
 	height: 320px;
 }
-.footer{padding:30px;margin-top:10px;color:#4A1E21 !important;}
+.footer{margin-right:30px;color:#4A1E21 !important;}
+.texto-about{
+	margin:30px;
+	border-top: solid 2px #4A1E21;
+	font-family: "museo";
+	font-weight: 300;
+	font-size: 1.3em;
+}
+.foto-about{
+	margin-top:30px;
+}
+.texto-contacto{
+	margin:30px;
+	border-top: solid 2px #4A1E21;
+	font-family: "museo";
+	font-weight: 300;
+	padding-top:30px;
+	font-size: 1.3em;
+}
+.foto-contacto{
+	margin-top:30px;
+	}

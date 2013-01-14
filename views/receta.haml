@@ -8,6 +8,16 @@
     %img{:src => "/images/recetas/letoqueslogo.jpg", :class => "logo"}
 .span9.spacer
   %img{:src => "/images/recetas/#{@receta.foto}", :class => "foto-receta"}
+.span9.spacer
+  %a{:href => "/recetas/categorias/#{@receta.category_id}", :style => "color:#4A1E21;", :class => "hov"}
+    %i.icon-circle-arrow-left
+    ="Volver a #{@categoria.nombre}"
+  .rig-pad
+    -if @receta.next
+      %a{:href => "/recetas/#{@receta.next.id}", :style => "color:#4A1E21;", :class => "hov"}
+        ="Siguiente receta"
+        %i.icon-circle-arrow-right
+.span9.spacer
   .span2.offset1
     %img{:src => "/images/recetas/gorrochef.png", :class => "i-receta"}
     %span.d-receta=@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
@@ -28,3 +38,4 @@
     .columna-title PREPARACIÓN
     =@receta.instructions
   .secreto=@receta.secret
+

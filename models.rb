@@ -6,6 +6,10 @@ class Receta < ActiveRecord::Base
   self.table_name = "recetas"
   validates_presence_of :name, :category_id, :foto, :difficulty, :time, :servings, :ingredients, :instructions, :secret
   belongs_to :categoria
+
+  def next
+    Receta.where("id > ?", self.id).order("recetas.id ASC").limit(1).first
+  end
 end
 
 class Condimento < ActiveRecord::Base
