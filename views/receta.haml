@@ -17,7 +17,7 @@
       %a{:href => "/recetas/#{@receta.next.id}", :style => "color:#4A1E21;", :class => "hov"}
         ="Siguiente receta"
         %i.icon-circle-arrow-right
-.span9.spacer
+.span9
   .span2.offset1
     %img{:src => "/images/recetas/gorrochef.png", :class => "i-receta"}
     %span.d-receta=@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
