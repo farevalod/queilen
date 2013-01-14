@@ -3,15 +3,38 @@
 	background: #FBFAF9;
 	padding-bottom:10px;
 }
-
-.texto-papas{
-	font-size: 3.2em;
-	font-family: "myriad-pro";
-	font-style: normal;
-	letter-spacing: 4px;
-	font-weight: 700;
-	color: #fff;
-	line-height: 1.25;
+.papa-foto{
+	margin:30px;
+}
+.papa-name{
+	font-family: "museo";
+	padding-top:30px;
+	margin-left:15px;
+	color: #A8594A;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 3em;
+}
+.modal-body{
+	height: 300px;
+}
+.papa-desc{
+	color: #4A1E21;
+	margin-left:15px;
+	font-size: 1em;
+	font-family: "museo";
+}
+.papa-info{
+	font-family: "museo";
+	margin-left:30px;
+	font-size: 1em;
+}
+.tip{
+	color: #A8594A;
+	margin-left:15px;
+	font-size: 1em;
+	font-family: "museo";
+	font-style: bold italic;
 }
 .papa-option{
 	color: rgba(184,151,92,1);

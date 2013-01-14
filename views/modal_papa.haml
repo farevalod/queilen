@@ -1,13 +1,36 @@
 .modal-bg.modal.hide.fade{:id => id}(tabindex="-1" role="dialog" aria-hidden="true")
   .modal-header
     %button.close(type="button" data-dismiss="modal" aria-hidden="true")×
-    %h3=papa.name
+    .papa-name=papa.name
   .modal-body
-    %img{:src => "/images/modal/#{papa.foto}"}
-    %p=papa.description
-    %p=papa.cook_time
-    %p=papa.taste
-    %p=papa.cook_mode
-    %p=papa.good_for
+    .papa-desc=papa.description
+    .tip
+      * Se sugiere conservar las papas en oscuridad para que mantengan sus propiedades (mayor duración de 14 días).
+
+    %img{:src => "/images/modal/#{papa.foto}", :class => "papa-foto"}
+    .papa-info
+      .span3
+        %b Tiempo de cocción:
+        %br
+        =papa.cook_time
+      .span2
+        %b Sabor:
+        %br
+        =papa.taste
+      .row
+      %br
+      .span3
+        %b Forma de cocción:
+        %br
+        =papa.cook_mode
+      .span2
+        %b Ideal:
+        %br
+        =papa.good_for
   .modal-footer
-    %button.btn(onClick="window.print()" value="Imprimir")Imprimir
+    %button.btn(onClick="window.print()" value="Imprimir")
+      %i.icon-print
+      Imprimir
+    %a.btn.btn-primary{:href => "/pdfimprimirweb.pdf"}
+      %i.icon-arrow-down.icon-white
+      Descargar PDF
