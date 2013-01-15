@@ -1,0 +1,28 @@
+.span5.offset1.foto-lover
+  %img{:src => "/images/papalover1.jpg"}
+.span5.foto-lover
+  %img{:src => "/images/papalover2.jpg"}
+.offset1.span10.texto-lover
+  Deliciosas y típicas recetas chilenas, distintos tipos de papa nativa y qué cocinar con ellas, todo esto una vez a la semana en tu casilla de email. Rellena con tus datos y déjate sorprender!
+%form.form-horizontal.span7
+  .control-group
+    %label.control-label(for="inputName")
+      Nombre
+    .controls
+      %input(id="inputName" type="text" placeholder="Nombre")
+  .control-group
+    %label.control-label(for="inputEmail")
+      Email
+    .controls
+      %input(id="inputEmail" type="text" placeholder="Email")
+  .control-group
+    %label.control-label(for="inputCiudad")
+      Ciudad
+    .controls
+      %input(id="inputCiudad" type="text" placeholder="Ciudad")
+  .control-group
+    %label.control-label(for="inputEdad")
+      Edad
+    .controls
+      %input(id="inputEdad" type="text" placeholder="Edad")
+  %button.offset2.btn{:type => "submit"}Enviar

@@ -49,10 +49,13 @@ end
 
 get '/cortes' do
     @categorias = Categoria.all()
-	@cortes = Corte.all()
+	@cortes = Corte.order(:name).all()
 	haml :cortes
 end
 
+get '/papa-lover' do
+  haml :papa_lover
+end
 get '/huerto' do
   haml :huerto
 end

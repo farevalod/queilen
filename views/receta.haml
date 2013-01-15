@@ -18,7 +18,7 @@
       %a{:href => "/recetas/#{@receta.next.id}", :style => "color:#4A1E21;", :class => "hov"}
         ="Siguiente receta"
         %i.icon-circle-arrow-right
-.span9
+.span9{:style => "padding-left:30px;"}
   .span2.offset1
     %img{:src => "/images/recetas/gorrochef.png", :class => "i-receta"}
     %span.d-receta=@receta.difficulty.force_encoding("ISO-8859-1").encode("UTF-8")
@@ -28,8 +28,7 @@
   .span2
     %img{:src => "/images/recetas/cubiertos.png", :class => "i-receta"}
     %span.d-receta=@receta.servings.to_s+" Porciones"
-.span9
-  .chef-div
+  .span9.chef-div
     %span.chef Receta creada y preparada para <b>Queilén</b> por el <b>Chef Axel Manriquez</b>, de <b>Le Toques Blanches</b>
   .span8.ruler
   .span4.columna-receta
