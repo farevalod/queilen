@@ -1,14 +1,12 @@
-.spacer
-  .span2.menu-cocina
-    =haml :menu_cocina, :locals => {:categorias => @categorias }
-  .span9
-    .span9{:id => "welcome-#{@categoria.nombre}"}
-    %img{:src => "/images/categorias/#{@categoria.foto}"}
-    .categoria-description=@categoria.description
-    .span9
-      -@recetas.each do |r|
-        .list-nombre.hov
-          %a{:href => "/recetas/#{r.id}"}
-            %img{:src => "/images/q.png", :style => "float:left;padding-right:15px;"}
-            .burdeo.receta-nombre(style="float:left;")=r.name
-        .row
+.span2.menu-cocina
+  =haml :menu_cocina, :locals => {:categorias => @categorias }
+.span9.categoria-foto{:id => "welcome-#{@categoria.nombre}"}
+  %img{:src => "/images/categorias/#{@categoria.foto}"}
+.span9.categoria-description=@categoria.description
+.span9.offset3
+  -@recetas.each do |r|
+    .list-nombre.hov
+      %a{:href => "/recetas/#{r.id}"}
+        %img{:src => "/images/q.png", :style => "float:left;padding-right:15px;"}
+        .burdeo.receta-nombre(style="float:left;")=r.name
+    .row

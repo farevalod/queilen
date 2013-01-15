@@ -1,14 +1,13 @@
-.spacer
-  .span2.menu-cocina
-    =haml :menu_cocina, :locals => {:categorias => @categorias }
-  .span9#welcome-condimentos
-  .span9.condimento-intro Aliños alimenticios que se aplican a distintos platos ya sea para sazonar, mejorar o realzar los sabores. La mayoría de las veces resulta más apetitoso, digerible y de muy buen gusto. Los ingredientes no deberían alterar el sabor natural de lo que se está cocinando
-  .span9.offset2
-    -@condimentos.each do |c|
-      .condimento
-        .span2
-          %img{:src => "/images/condimentos/#{c.foto}"}
-        .span6
-          %h3.burdeo=c.name
-          %span.condimento-description=c.description
-      .row
+.span2.menu-cocina
+  =haml :menu_cocina, :locals => {:categorias => @categorias }
+.span9#welcome-condimentos
+.span9.condimento-intro Aliños alimenticios que se aplican a distintos platos ya sea para sazonar, mejorar o realzar los sabores. La mayoría de las veces resulta más apetitoso, digerible y de muy buen gusto. Los ingredientes no deberían alterar el sabor natural de lo que se está cocinando
+.span9.offset2
+  -@condimentos.each do |c|
+    .condimento
+      .span2
+        %img{:src => "/images/condimentos/#{c.foto}"}
+      .span6
+        %h3.burdeo=c.name
+        %span.condimento-description=c.description
+    .row

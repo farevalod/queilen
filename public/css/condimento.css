@@ -1,6 +1,7 @@
 #welcome-condimentos{
 	background-image: url("/images/condimentos/condimentoportada.jpg");
 	height: 205px;
+	margin-top: 30px;
 }
 .condimento-nombre{
 	color: #BF742E;

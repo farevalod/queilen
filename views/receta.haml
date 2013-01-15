@@ -1,11 +1,12 @@
-.span2
-  .menu-cocina=haml :menu_cocina, :locals => {:categorias => @categorias }
-  %a{:href => "http://www.jumbo.cl", :target => "_blank" }
-    %img{:src => "/images/recetas/jumbologo.jpg", :class => "logo"}
-  %a{:href => "http://www.gourmet.cl", :target => "_blank" }
-    %img{:src => "/images/recetas/gourmetlogo.jpg", :class => "logo"}
-  %a{:href => "http://www.ltb.cl", :target => "_blank" }
-    %img{:src => "/images/recetas/letoqueslogo.jpg", :class => "logo"}
+.span2.menu-cocina
+  =haml :menu_cocina, :locals => {:categorias => @categorias }
+  .logos{:style => "background:#FFFFFF;"}
+    %a{:href => "http://www.jumbo.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/jumbologo.jpg", :class => "logo"}
+    %a{:href => "http://www.gourmet.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/gourmetlogo.jpg", :class => "logo"}
+    %a{:href => "http://www.ltb.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/letoqueslogo.jpg", :class => "logo"}
 .span9.spacer
   %img{:src => "/images/recetas/#{@receta.foto}", :class => "foto-receta"}
 .span9.spacer
@@ -37,5 +38,5 @@
   .span3.columna-receta
     .columna-title PREPARACIÓN
     =@receta.instructions
-  .secreto=@receta.secret
+  .secreto="SECRETO<br>"+@receta.secret
 

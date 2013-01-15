@@ -1,15 +1,14 @@
-.spacer
-  .span2.menu-cocina
-    =haml :menu_cocina, :locals => {:categorias => @categorias }
-  .span9#welcome-cortes
-    %img{:src => "/images/cortes/cortesportada.jpg"}
-  .span9.corte-intro En las distintas variedades de preparar un plato, existen diferentes técnicas de corte de los ingredientes, aplicadas la mayoría con un cuchillo. Ya sea por atractiva o que convenga mejor en la preparación del plato, aquí los cortes de papa más comunes.
-  .span9.offset2
-    -@cortes.each do |c|
-      .corte
-        .span2
-          %img{:src => "/images/cortes/#{c.foto}", :class => "rounded"}
-        .span6
-          %h3.burdeo=c.name
-          %span.corte-description=c.description
-      .row
+.span2.menu-cocina
+  =haml :menu_cocina, :locals => {:categorias => @categorias }
+.span9#welcome-cortes
+  %img{:src => "/images/cortes/cortesportada.jpg"}
+.span9.corte-intro En las distintas variedades de preparar un plato, existen diferentes técnicas de corte de los ingredientes, aplicadas la mayoría con un cuchillo. Ya sea por atractiva o que convenga mejor en la preparación del plato, aquí los cortes de papa más comunes.
+.span9.offset2
+  -@cortes.each do |c|
+    .corte
+      .span2
+        %img{:src => "/images/cortes/#{c.foto}", :class => "rounded"}
+      .span6
+        %h3.burdeo=c.name
+        %span.corte-description=c.description
+    .row
