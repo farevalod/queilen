@@ -39,6 +39,7 @@
 }
 .rig{
 	float:right;
+	margin-right: 45px;
 }
 #main-box{
 	background: #F3EEEA;
@@ -113,7 +114,12 @@
     background-size: cover;
 	height: 320px;
 }
-.footer{margin-right:30px;color:#4A1E21 !important;}
+.footer{
+	margin-right:30px;color:#fff !important;
+	font-family: "museo";
+	font-weight: 300;
+	font-size: 1.0em;
+	}
 .texto-about{
 	margin:30px;
 	border-top: solid 2px #4A1E21;

@@ -3,8 +3,13 @@
 	height: 205px;
 	margin-top: 30px;
 }
-.condimento-nombre{
+.condimento-name{
 	color: #BF742E;
+	font-style: bold;
+	font-weight: 700;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 1.3em;
 }
 .condimento-intro{
 	padding-top: 30px;

@@ -1,5 +1,10 @@
-.corte-nombre{
+.corte-name{
 	color: #BF742E;
+	font-style: bold;
+	font-weight: 700;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 1.3em;
 }
 #welcome-cortes{
 	margin-top: 30px;
