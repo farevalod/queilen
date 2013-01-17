@@ -1,9 +1,16 @@
 .span2.menu-cocina
   =haml :menu_cocina, :locals => {:categorias => @categorias }
+  .logos{:style => "background:#FFFFFF;"}
+    %a{:href => "http://www.jumbo.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/jumbologo.png", :class => "logo"}
+    %a{:href => "http://www.gourmet.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/gourmetlogo.png", :class => "logo"}
+    %a{:href => "http://www.ltb.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/ltblogo.png", :class => "logo"}
 .span9.categoria-foto{:id => "welcome-#{@categoria.nombre}"}
   %img{:src => "/images/categorias/#{@categoria.foto}"}
 .span9.categoria-description=@categoria.description
-.span9.offset3
+.span9
   -@recetas.each do |r|
     .list-nombre.hov
       %a{:href => "/recetas/#{r.id}"}

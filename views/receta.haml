@@ -2,11 +2,11 @@
   =haml :menu_cocina, :locals => {:categorias => @categorias }
   .logos{:style => "background:#FFFFFF;"}
     %a{:href => "http://www.jumbo.cl", :target => "_blank" }
-      %img{:src => "/images/recetas/jumbologo.jpg", :class => "logo"}
+      %img{:src => "/images/recetas/jumbologo.png", :class => "logo"}
     %a{:href => "http://www.gourmet.cl", :target => "_blank" }
-      %img{:src => "/images/recetas/gourmetlogo.jpg", :class => "logo"}
+      %img{:src => "/images/recetas/gourmetlogo.png", :class => "logo"}
     %a{:href => "http://www.ltb.cl", :target => "_blank" }
-      %img{:src => "/images/recetas/letoqueslogo.jpg", :class => "logo"}
+      %img{:src => "/images/recetas/ltblogo.png", :class => "logo"}
 .span9.spacer
   %img{:src => "/images/recetas/#{@receta.foto}", :class => "foto-receta"}
 .span9.spacer
@@ -38,4 +38,8 @@
     .columna-title PREPARACIÓN
     =@receta.instructions
   .secreto="SECRETO<br>"+@receta.secret
-
+.row
+.span3.offset2{:style => "margin-top:30px;margin-left:229px;"}
+  %button.btn(onClick="window.print()" value="Imprimir")
+    %i.icon-print
+    Imprimir

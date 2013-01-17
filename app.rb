@@ -9,6 +9,7 @@ set :default_icon, "favicon.ico"
 
 get '/' do
   @papas = Papa.all()
+  @info = Infohome.random
   haml :index
 end
 get '/la-papa/:id' do

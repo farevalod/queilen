@@ -24,6 +24,17 @@ class Corte < ActiveRecord::Base
   validates_presence_of :name, :foto, :description
 end
 
+class Infohome < ActiveRecord::Base
+  validates_presence_of :nombre, :foto
+  self.table_name = "infohome"
+
+  def self.random
+    if (c = Infohome.count) != 0
+      Infohome.find(:first, :offset =>rand(c))
+    end
+  end
+end
+
 class Categoriaspapa < ActiveRecord::Base
   validates_presence_of :nombre, :foto, :texto
   self.table_name = "categorias_papa"

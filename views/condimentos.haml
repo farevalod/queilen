@@ -1,8 +1,15 @@
 .span2.menu-cocina
   =haml :menu_cocina, :locals => {:categorias => @categorias }
+  .logos{:style => "background:#FFFFFF;"}
+    %a{:href => "http://www.jumbo.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/jumbologo.png", :class => "logo"}
+    %a{:href => "http://www.gourmet.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/gourmetlogo.png", :class => "logo"}
+    %a{:href => "http://www.ltb.cl", :target => "_blank" }
+      %img{:src => "/images/recetas/ltblogo.png", :class => "logo"}
 .span9#welcome-condimentos
 .span9.condimento-intro Aliños alimenticios que se aplican a distintos platos ya sea para sazonar, mejorar o realzar los sabores. La mayoría de las veces resulta más apetitoso, digerible y de muy buen gusto. Los ingredientes no deberían alterar el sabor natural de lo que se está cocinando
-.span9.offset2
+.span9
   -@condimentos.each do |c|
     .condimento
       .span2
@@ -11,3 +18,7 @@
         .condimento-name.burdeo=c.name
         %span.condimento-description=c.description
     .row
+.span3.offset2{:style => "margin-top:30px;margin-left:229px;"}
+  %button.btn(onClick="window.print()" value="Imprimir")
+    %i.icon-print
+    Imprimir
