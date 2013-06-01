@@ -23,4 +23,16 @@
       Mensaje
     .controls
       %textarea(rows=4 id="inputText" type="text" placeholder="Mensaje")
-  %button.offset2.btn{:type => "submit"}Enviar
+  %button.offset2.btn#send{:type => "submit"}Enviar
+  .row{:style => "margin-bottom:30px;"}
+  .alert.alert-success#gracias
+    %a.close(href="#" data-dismiss="alert")
+      &times;
+    %b Gracias
+    Tus datos fueron registrados correctamente.
+:javascript
+  $("#send").click(function() {
+    $("#gracias").toggle("slow");
+  });
+  $("#gracias").hide();
+  $("form").submit(function() { return false });
